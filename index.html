@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>for循环练习</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// 用户交互窗口，输入值
+			var num = prompt("输入一个数字");
+			 if(num < 1,num != Number){
+				 // 判断该值是否合法
+				 // 不合法将被弹出
+				 alert("该值不合法！")
+			 }else{
+				 // 建立一个旗帜变量
+				 var flag = true;
+				 // 循环num以下的数，
+				 // 如果能被整除，则旗帜变量被设置为false
+				 // 如果未有整除的，则旗帜变量不变
+				 // 进入下一个逻辑
+				 for(var i=2 ; i<num ; i++){
+					if(num %0 == 0){
+						flag = false;
+					}
+				 }
+				 // 根据旗帜变量布尔值来判断该数字是否为质数
+				 if(flag){
+					 alert("这个数是质数！！");
+				 }else{
+					 alert("z这个数不是质数！！")
+				 }
+				 
+			 }
+		</script>
+	</body>
+</html>
